@@ -9,20 +9,22 @@
 	},
     "PlayerData":
 	{
-		"disablePersonalLight": false,
-		"StaminaData":
+		"disablePersonalLight": true,
+		"spawnGearPresetFiles": [
+    "custom/test1.json" ],
+		 "StaminaData":
 		{
-			"sprintStaminaModifierErc": 1.0,
-			"sprintStaminaModifierCro": 1.0,
+			"sprintStaminaModifierErc": 0.1,
+			"sprintStaminaModifierCro": 0.1,
 			"staminaWeightLimitThreshold": 6000.0,
 			"staminaMax": 100.0,
-			"staminaKgToStaminaPercentPenalty": 1.75,
+			"staminaKgToStaminaPercentPenalty": 0.1,
 			"staminaMinCap": 5.0,
-			"sprintSwimmingStaminaModifier": 1.0,
-			"sprintLadderStaminaModifier": 1.0,
-			"meleeStaminaModifier": 1.0,
-			"obstacleTraversalStaminaModifier": 1.0,
-			"holdBreathStaminaModifier": 1.0
+			"sprintSwimmingStaminaModifier": 0.1,
+			"sprintLadderStaminaModifier": 0.1,
+			"meleeStaminaModifier": 0.1,
+			"obstacleTraversalStaminaModifier": 1,
+			"holdBreathStaminaModifier": 0.1
 		},
 		"ShockHandlingData":
 		{
@@ -54,33 +56,55 @@
 	"WorldsData":
 	{
 		"lightingConfig": 0,
-		"objectSpawnersArr": [],
-		"environmentMinTemps": [-3, -2, 0, 4, 9, 14, 18, 17, 13, 11, 9, 0],
-		"environmentMaxTemps": [3, 5, 7, 14, 19, 24, 26, 25, 18, 14, 10, 5],
-		"wetnessWeightModifiers": [1.0, 1.0, 1.33, 1.66, 2.0]
+		"objectSpawnersArr": ["./custom/WinterChernarus_1.json",
+						"./custom/WinterChernarus_2.json",
+						"./custom/WinterChernarus_3.json",
+						"./custom/WinterChernarus_4.json",
+						"./custom/WinterChernarus_5.json",
+						"./custom/WinterChernarus_6.json",
+						"./custom/WinterChernarus_7.json",
+						"./custom/WinterChernarus_8.json",
+						"./custom/WinterChernarus_9.json",
+						"./custom/WinterChernarus_10.json",
+						"./custom/WinterChernarus_11.json",
+						"./custom/WinterChernarus_12.json",
+						"./custom/WinterChernarus_13.json",
+						"./custom/WinterChernarus_14.json",
+						"./custom/WinterChernarus_15.json",
+						"./custom/WinterChernarus_16.json",
+						"./custom/WinterChernarus_17.json",
+						"./custom/WinterChernarus_18.json",
+						"./custom/WinterChernarus_19.json",
+						"./custom/WinterChernarus_20.json",
+						"./custom/BangBang.json",
+                        "./custom/flag-kit-8142-3151.json"
+                        ],
+		"environmentMinTemps": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+		"environmentMaxTemps": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+		"wetnessWeightModifiers": [1.0, 1.0, 1.0, 1.0, 1.0]
 	},
 	"BaseBuildingData":
 	{
 		"HologramData":
 		{
-			"disableIsCollidingBBoxCheck": false,
-			"disableIsCollidingPlayerCheck": false,
-			"disableIsClippingRoofCheck": false,
-			"disableIsBaseViableCheck": false,
-			"disableIsCollidingGPlotCheck": false,
-			"disableIsCollidingAngleCheck": false,
-			"disableIsPlacementPermittedCheck": false,
-			"disableHeightPlacementCheck": false,
-			"disableIsUnderwaterCheck": false,
-			"disableIsInTerrainCheck": false,
-			"disableColdAreaBuildingCheck": false,
+			"disableIsCollidingBBoxCheck": true,
+			"disableIsCollidingPlayerCheck": true,
+			"disableIsClippingRoofCheck": true,
+			"disableIsBaseViableCheck": true,
+			"disableIsCollidingGPlotCheck": true,
+			"disableIsCollidingAngleCheck": true,
+			"disableIsPlacementPermittedCheck": true,
+			"disableHeightPlacementCheck": true,
+			"disableIsUnderwaterCheck": true,
+			"disableIsInTerrainCheck": true,
+			"disableColdAreaBuildingCheck": true,
 			"disallowedTypesInUnderground": ["FenceKit","TerritoryFlagKit","WatchtowerKit"]
 		},
 		"ConstructionData":
 		{
-			"disablePerformRoofCheck": false,
-			"disableIsCollidingCheck": false,
-			"disableDistanceCheck": false
+			"disablePerformRoofCheck": true,
+			"disableIsCollidingCheck": true,
+			"disableDistanceCheck": true
 		}
 	},
 	"UIData":
@@ -102,7 +126,7 @@
 	{
 		"ignoreMapOwnership": false,
 		"ignoreNavItemsOwnership": false,
-		"displayPlayerPosition": false,
+		"displayPlayerPosition": true,
 		"displayNavInfo": true
 	},
 	"VehicleData":

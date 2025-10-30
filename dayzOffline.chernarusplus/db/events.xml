@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <events>
+    <event name="ItemBangBang">
+        <nominal>0</nominal>
+        <min>4</min>
+        <max>5</max>
+        <lifetime>14400</lifetime>
+        <restock>900</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>1</distanceradius>
+        <cleanupradius>10</cleanupradius>
+        <secondary/>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="5" max="5" min="5" type="M4A1"/>
+        </children>
+    </event>
     <event name="AmbientFox">
         <nominal>0</nominal>
         <min>0</min>
@@ -729,13 +747,13 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>fixed</position>
         <limit>child</limit>
-        <active>0</active>
+        <active>1</active>
         <children>
             <child lootmax="8" lootmin="4" max="20" min="20" type="Bonfire"/>
         </children>
     </event>
     <event name="StaticChristmasTree">
-        <nominal>13</nominal>
+        <nominal>15</nominal>
         <min>0</min>
         <max>0</max>
         <lifetime>43200</lifetime>
@@ -746,7 +764,7 @@
         <flags deletable="0" init_random="0" remove_damaged="1"/>
         <position>uniform</position>
         <limit>child</limit>
-        <active>0</active>
+        <active>1</active>
         <children>
             <child lootmax="15" lootmin="10" max="13" min="13" type="ChristmasTree"/>
         </children>
@@ -784,7 +802,7 @@
         <children/>
     </event>
     <event name="StaticHeliCrash">
-        <nominal>3</nominal>
+        <nominal>10</nominal>
         <min>0</min>
         <max>0</max>
         <lifetime>2100</lifetime>
@@ -798,7 +816,7 @@
         <limit>child</limit>
         <active>1</active>
         <children>
-            <child lootmax="15" lootmin="10" max="3" min="1" type="Wreck_UH1Y"/>
+            <child lootmax="15" lootmin="10" max="10" min="1" type="Wreck_UH1Y"/>
         </children>
     </event>
     <event name="StaticMilitaryConvoy">
@@ -853,7 +871,7 @@
         <children/>
     </event>
     <event name="StaticSantaCrash">
-        <nominal>3</nominal>
+        <nominal>10</nominal>
         <min>0</min>
         <max>0</max>
         <lifetime>2100</lifetime>
@@ -865,9 +883,9 @@
         <flags deletable="1" init_random="0" remove_damaged="0"/>
         <position>fixed</position>
         <limit>child</limit>
-        <active>0</active>
+        <active>1</active>
         <children>
-            <child lootmax="15" lootmin="10" max="3" min="1" type="Wreck_SantasSleigh"/>
+            <child lootmax="15" lootmin="10" max="10" min="1" type="Wreck_SantasSleigh"/>
         </children>
     </event>
     <event name="StaticTrain">
