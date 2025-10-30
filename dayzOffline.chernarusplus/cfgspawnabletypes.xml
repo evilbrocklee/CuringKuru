@@ -2275,12 +2275,12 @@
 		<!-- MakarovPBSuppressor -->
 	</type>
 	<type name="MKII">
-		<attachments chance="0.60">
+		<attachments chance="1.00">
 			<item name="Mag_MKII_10Rnd" chance="1.00" />
 		</attachments>
 	</type>
 	<type name="CZ75">
-		<attachments chance="0.70">
+		<attachments chance="1.00">
 			<item name="Mag_CZ75_15Rnd" chance="1.00" />
 		</attachments>
 		<attachments chance="0.20">
@@ -2508,7 +2508,7 @@
 		</attachments>
 	</type>
 	<type name="M4A1">
-		<damage min="0.45" max="0.85" />
+		<damage min="0.0" max="0.0" />
 		<attachments chance="1.00">
 			<item name="M4_OEBttstck" chance="1.00" />
 		</attachments>
@@ -2519,11 +2519,8 @@
 			<item name="BUISOptic" chance="0.50" />
 			<item name="M4_CarryHandleOptic" chance="1.00" />
 		</attachments>
-		<attachments chance="0.30">
-			<item name="Mag_CMAG_40Rnd" chance="0.15" />
-			<item name="Mag_CMAG_10Rnd" chance="0.50" />
-			<item name="Mag_CMAG_20Rnd" chance="0.70" />
-			<item name="Mag_CMAG_30Rnd" chance="1.00" />
+		<attachments chance="1.00">
+			<item name="Mag_CMAG_40Rnd" chance="1.00" />
 		</attachments>
 	</type>
 	<type name="M16A2">
@@ -2632,17 +2629,17 @@
 	</type>
 	<type name="Ruger1022">
 		<damage min="0.0" max="0.32" />
-		<attachments chance="0.20">
+		<attachments chance="1.00">
 			<item name="SportingOptic" chance="0.90" />
 			<item name="HuntingOptic" chance="0.10" />
 		</attachments>
-		<attachments chance="0.50">
-			<item name="Mag_Ruger1022_30Rnd" chance="0.30" />
+		<attachments chance="1.00">
+			<item name="Mag_Ruger1022_30Rnd" chance="0.50" />
 			<item name="Mag_Ruger1022_15Rnd" chance="0.50" />
 		</attachments>
 	</type>
 	<type name="Deagle">
-		<attachments chance="0.10">
+		<attachments chance="1.00">
 			<item name="Mag_Deagle_9rnd" chance="1.00" />
 		</attachments>
 	</type>
